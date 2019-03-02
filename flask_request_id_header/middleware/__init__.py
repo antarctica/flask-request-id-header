@@ -37,7 +37,7 @@ class RequestID(object):
         self._unique_request_id_value_prefix = app.config['REQUEST-ID-UNIQUE-VALUE-PREFIX']
         self._header_name = "X-Request-ID"
         self._flask_header_name = f"HTTP_{ self._header_name.upper().replace('-', '_') }"
-        
+
         app.wsgi_app = self
 
     def __call__(self, environ, start_response) -> App:
