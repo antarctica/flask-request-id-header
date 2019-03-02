@@ -10,7 +10,7 @@ def create_app_with_middleware():
     _app = Flask(__name__)
 
     # Configure and load Middleware
-    _app.config['REQUEST-ID-UNIQUE-VALUE-PREFIX'] = 'TEST-'
+    _app.config['REQUEST_ID_UNIQUE_VALUE_PREFIX'] = 'TEST-'
     RequestID(_app)
 
     @_app.route("/sample")
