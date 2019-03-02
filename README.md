@@ -84,7 +84,7 @@ A minimal application would look like this:
 ```python
 import logging
 
-from flask import Flask, request
+from flask import Flask, request, has_request_context
 from flask.logging import default_handler
 from flask_request_id_header.middleware import RequestID
 
