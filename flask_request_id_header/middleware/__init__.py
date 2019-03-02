@@ -20,7 +20,7 @@ class RequestID(object):
 
     1. is a valid UUID (version 4)
     2. or, the value is known to be from a component that assigns unique IDs, identified by a common prefix set in the
-       'REQUEST-ID-UNIQUE-VALUE-PREFIX' Flask config value
+       'REQUEST_ID_UNIQUE_VALUE_PREFIX' Flask config value
 
     To use the Request ID in the current application: `print(request.environ.get("HTTP_X_REQUEST_ID"))`
     For use elsewhere, the Request ID header is included in the response back to the client.
@@ -34,7 +34,7 @@ class RequestID(object):
         :param app: Flask application
         """
         self.app = app.wsgi_app
-        self._unique_request_id_value_prefix = app.config['REQUEST-ID-UNIQUE-VALUE-PREFIX']
+        self._unique_request_id_value_prefix = app.config['REQUEST_ID_UNIQUE_VALUE_PREFIX']
         self._header_name = "X-Request-ID"
         self._flask_header_name = f"HTTP_{ self._header_name.upper().replace('-', '_') }"
 

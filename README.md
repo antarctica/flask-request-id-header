@@ -40,7 +40,7 @@ def hello_world():
     return 'hello world'
 ```
 
-Optionally a Flask config option, `REQUEST-ID-UNIQUE-VALUE-PREFIX`, can be set whereby any request ID beginning with 
+Optionally a Flask config option, `REQUEST_ID_UNIQUE_VALUE_PREFIX`, can be set whereby any request ID beginning with 
 this prefix be treated as unique, preventing an additional value being appended.
 
 A minimal application would look like this:
@@ -51,7 +51,7 @@ from flask_request_id_header.middleware import RequestID
 
 app = Flask(__name__)
 
-app.config['REQUEST-ID-UNIQUE-VALUE-PREFIX'] = 'FOO-'
+app.config['REQUEST_ID_UNIQUE_VALUE_PREFIX'] = 'FOO-'
 RequestID(app)
 
 @app.route('/')
@@ -90,7 +90,7 @@ from flask_request_id_header.middleware import RequestID
 
 app = Flask(__name__)
 
-app.config['REQUEST-ID-UNIQUE-VALUE-PREFIX'] = 'FOO-'
+app.config['REQUEST_ID_UNIQUE_VALUE_PREFIX'] = 'FOO-'
 RequestID(app)
 
 class RequestFormatter(logging.Formatter):
