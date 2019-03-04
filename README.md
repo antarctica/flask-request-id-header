@@ -323,7 +323,7 @@ The maintainer of this project is the BAS Web & Applications Team, they can be c
 ## Issue tracking
 
 This project uses issue tracking, see the 
-[Issue tracker](https://gitlab.data.bas.ac.uk/web-apps/flask-middleware/flask-request-id/issues) for more information.
+[Issue tracker](https://gitlab.data.bas.ac.uk/web-apps/flask-extensions/flask-request-id/issues) for more information.
 
 **Note:** Read & write access to this issue tracker is restricted. Contact the project maintainer to request access.
 

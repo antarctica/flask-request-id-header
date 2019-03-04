@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Refactored `app.py` to prevent creating an application on import
 * Improved versioning support in `setup.py`
 
+### Changed
+
+* Updating references to new GitLab project location
+
 ## [0.1.1] - 2019-03-02
 
 ### Fixed
