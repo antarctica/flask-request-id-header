@@ -34,7 +34,7 @@ class RequestID(object):
         :param app: Flask application
         """
         self.app = app.wsgi_app
-        self._unique_request_id_value_prefix = app.config['REQUEST_ID_UNIQUE_VALUE_PREFIX']
+        self._unique_request_id_value_prefix = app.config.get('REQUEST_ID_UNIQUE_VALUE_PREFIX')
         self._header_name = "X-Request-ID"
         self._flask_header_name = f"HTTP_{ self._header_name.upper().replace('-', '_') }"
 
